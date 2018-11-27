@@ -41,13 +41,7 @@ def get_Results(my_query):
     return results
 
 
-result1 = get_Results(query_1)
-result2 = get_Results(query_2)
-result3 = get_Results(query_3)
-
-
 # Create a function to print results
-
 
 def print_results(q_list):
     for i in range(len(q_list)):
@@ -58,6 +52,9 @@ def print_results(q_list):
 
 
 if __name__ == '__main__':
+    result1 = get_Results(query_1)
+    result2 = get_Results(query_2)
+    result3 = get_Results(query_3)
     print(request_1)
     print_results(result1)
     print(request_2)
